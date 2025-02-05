@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculatrice</title>
+</head>
+<body>
+
+    <h1>Calculatrice</h1>
+
+    <div class="calculatrice">
+        <input type="number" name="saisie" id="saisie">
+
+        <div class="box">
+        <button value="7" onclick="insertNumber(this)">7</button>
+        <button value="8" onclick="insertNumber(this)">8</button>
+        <button value="9" onclick="insertNumber(this)">9</button>
+        <button class="ac">AC</button>
+
+        </div>
+
+        <div class="box">
+            <button value="4" onclick="insertNumber(this)">4</button>
+            <button value="5" onclick="insertNumber(this)">5</button>
+            <button value="6" onclick="insertNumber(this)">6</button>
+            <button class="plus" onclick="insertSigne(this)">+</button>
+
+        </div>
+
+        <div class="box">
+            <button value="1" onclick="insertNumber(this)">1</button>
+            <button value="2" onclick="insertNumber(this)">2</button>
+            <button value="3" onclick="insertNumber(this)">3</button>
+            <button class="moins" onclick="insertSigne(this)">-</button>
+
+        </div>
+
+        <div class="box">
+            <button value="0" onclick="insertNumber(this)">0</button>
+            <button class="diviser" onclick="insertSigne(this)">/</button>
+            <button class="multiplier" onclick="insertSigne(this)">*</button>
+            <button class="egal" onclick="calcul()">=</button>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
